@@ -1,0 +1,111 @@
+
+section {
+    z-index: 2;
+    background: none;
+}
+
+#index-page-1 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+}
+
+#index-bg-main {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#index-bg-main>div {
+    height: 100%;
+}
+
+#hero-text {
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    color: var(--color-text-hero)
+}
+
+
+/* INDEX-PAGE-2 */
+
+#index-page-2 {
+    position: relative;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    background: var(--color-bg-main);
+}
+
+#index-page-2 h2, p {
+    z-index: 2;
+    max-width: 450px;
+    text-align: center;
+}
+
+#index-page-2 h2{
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+#index-2-images {
+    min-height: 100vh;
+    position: absolute;
+    top: 200px;
+    width: 90%;
+    min-width: 1200px;
+}
+
+#index-2-images div {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+#id2-img1 {
+    background-image: url(../images/shelf1.jpg);
+    width: 300px;
+    height: 400px;
+    top: 100px;
+    left: 1rem;
+}
+
+#id2-img2 {
+    width: 191px;
+    height: 340px;
+    background-image: url(../images/lamp1.jpg);
+    top: 200px;
+    right: 5rem;
+}
+
+#id2-img3 {
+    background-image: url(../images/chair1.jpg);
+    height: 200px;
+    width: 170px;
+    top: 600px;
+    left: 4rem;
+}
+
+#id2-img4 {
+    background-image: url(../images/table1.jpg);
+    height: 350px;
+    width: 250px;
+    top: 60%;
+    left: 35%;
+}
+
+#id2-img5 {
+    background-image: url(../images/sofa1.jpg);
+    height: 220px;
+    width: 400px;
+    top: 70%;
+    right: 2rem;
+}

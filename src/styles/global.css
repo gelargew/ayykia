@@ -1,0 +1,27 @@
+:root {
+    --color-bg-main: #E3DECF;
+    --color-text-hero: #FFE600;
+    --color-text-main: black;
+    --color-text-nav: #82796C;
+    --color-border: #A19385;
+    --color-bg-a1: #82796C;
+    --color-bg-a2: #BF9167;
+
+}
+
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    overscroll-behavior: none;
+    background: var(--color-bg-main);
+}
+
+.scroll-container {
+    position: fixed;
+    will-change: transform;
+    right: 0;
+    left: 0;
+  }
+  
