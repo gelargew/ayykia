@@ -9,14 +9,8 @@ import React, {
 import { animated as a, useSpring } from "@react-spring/web";
 import ResizeObserver from "resize-observer-polyfill";
 
-interface ScrollStateProps {
-  windowScrollY: number
-}
-
-export const ScrollState = React.createContext<ScrollStateProps>(null)
 
 const ScrollContainer = ({ children, scrollInertia=70 }: { children?: any, scrollInertia?: number}) => {
-  const [windowScrollY, setWindowScrollY] = useState(window.scrollY)
   const [{ y }, set] = useSpring(() => ({
     y: [0],
     config: {
@@ -41,7 +35,6 @@ const ScrollContainer = ({ children, scrollInertia=70 }: { children?: any, scrol
 
   const handleScroll = () => {
     set({ y: [-window.scrollY] });
-    setWindowScrollY(window.scrollY)
   }
 
   useLayoutEffect(() => {
@@ -61,7 +54,7 @@ const ScrollContainer = ({ children, scrollInertia=70 }: { children?: any, scrol
   }, [set]);
 
   return (
-    <ScrollState.Provider value={{windowScrollY}}>
+    <>
       <a.div
         style={{ transform: y.to(y => `translate3d(0,${y}px,0)`) }}
         ref={viewportRef}
@@ -70,10 +63,8 @@ const ScrollContainer = ({ children, scrollInertia=70 }: { children?: any, scrol
         {children}
       </a.div>
       <div style={{ height: currentHeight }} />
-    </ScrollState.Provider>
+    </>
   );
 };
-
-export const useScrollState = () => useContext(ScrollState)
 
 export default ScrollContainer;

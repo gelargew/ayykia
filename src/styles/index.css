@@ -2,6 +2,7 @@
 section {
     z-index: 2;
     background: none;
+    min-height: 100vh;
 }
 
 #index-page-1 {
@@ -36,11 +37,11 @@ section {
 
 #index-page-2 {
     position: relative;
-    min-height: 120vh;
+    min-height: 150vh;
     display: flex;
     flex-direction: column;
     place-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background: var(--color-bg-main);
 }
 
@@ -51,6 +52,7 @@ section {
 }
 
 #index-page-2 h2{
+    margin-top: 15rem;
     font-size: 45px;
     font-weight: bold;
 
@@ -87,7 +89,7 @@ section {
 }
 
 #id2-img3 {
-    background-image: url(../images/chair1.jpg);
+    background-image: url(../images/chair2.jpg);
     height: 200px;
     width: 170px;
     top: 600px;
@@ -108,4 +110,39 @@ section {
     width: 400px;
     top: 70%;
     right: 2rem;
+}
+
+
+/* INDEX-PAGE-3 */
+
+#index-page-3 {
+    display: flex;
+    min-height: 120vh;
+}
+
+#index-page-3>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+}
+
+#id3-left {
+    background: var(--color-bg-a1);
+}
+
+#id3-left img {
+    width: 70%;
+    max-width: 500px;
+}
+
+#id3-right {
+    background: var(--color-bg-a2);
+    color: white;
+}
+
+#id3-right h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
 }

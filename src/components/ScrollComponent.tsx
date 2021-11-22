@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { useSpring } from '@react-spring/web';
 import { animated, AnimatedComponent, AnimatedProps } from '@react-spring/web'
-import { useScrollState } from './ScrollContainer';
+import { useScrollState } from '../pages';
 
 export function ScrollComponent({speed=0.1, ...props}) {
     const ref = useRef<HTMLDivElement>()
