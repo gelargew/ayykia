@@ -20,7 +20,6 @@ export function ScrollComponent({speed=0.1, ...props}) {
 
     useEffect(() => {
         set({y: [-windowScrollY*speed]})
-        console.log(ref.current.getBoundingClientRect().y)
     }, [windowScrollY])
 
     return (
