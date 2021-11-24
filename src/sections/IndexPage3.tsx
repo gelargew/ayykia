@@ -40,12 +40,34 @@ export default function IndexPage3() {
             </div>
 
             <div id='id3-right'>
-                <h2>LAMP</h2>
-                <p>Explore all types of lamps from tripod lamp, goose lamp, buffet lamp and more.</p>
+                <h2>featured</h2>
+                <button 
+                style={{ 
+                    left: '1rem',
+                    transform: 'translateY(-5rem) rotateZ(-90deg)',
+                    color: show.lamp1 ? 'white' : 'transparent'
+                }} 
+                onClick={() => setShow('lamp1')}>
+                    LAMP
+                </button>
+                <button 
+                style={{
+                    right: '1rem', 
+                    transform: 'translateY(8rem) rotateZ(90deg)',
+                    color: show.chair1 ? 'white' : 'transparent'
+                }} 
+                onClick={() => setShow('chair1')}>
+                    CHAIR
+                </button>
+                <button 
+                style={{
+                    color: show.desk1 ? 'white' : 'transparent'
+                }} 
+                onClick={() => setShow('desk1')}>
+                    DESK
+                </button>
             </div>
-            <button style={{ position: 'absolute', top: '5rem', left: '5rem', zIndex: 4 }} onClick={() => setShow('lamp1')}>LAMP</button>
-            <button style={{ position: 'absolute', top: '10rem', left: '10rem', zIndex: 4 }} onClick={() => setShow('chair1')}>CHAIR</button>
-            <button style={{ position: 'absolute', top: '10rem', left: '15rem', zIndex: 4 }} onClick={() => setShow('desk1')}>DESK</button>
+
         </section>
     )
 }

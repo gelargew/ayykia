@@ -26,10 +26,11 @@ section {
 }
 
 #hero-text {
-    font-size: 100px;
+    font-size: 20vw;
     letter-spacing: 5px;
     font-weight: bolder;
-    color: var(--color-text-hero)
+    -webkit-text-stroke: 5px var(--color-text-hero);
+    color: transparent;
 }
 
 
@@ -55,6 +56,8 @@ section {
     margin-top: 15rem;
     font-size: 45px;
     font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--color-text-main);
 
 }
 
@@ -146,10 +149,31 @@ section {
     max-width: 500px;
 }
 
-#id3-right {
+#index-page-3>#id3-right {
     background: var(--color-bg-a2);
+    position: relative;
     color: white;
 }
+
+#id3-right h2 {
+    position: absolute;
+    top: 10rem;
+}
+
+
+#id3-right button {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 5vw;
+    letter-spacing: 1rem;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    transition: color 0.4s;
+}
+
 
 #id3-right h2 {
     font-size: 40px;

@@ -24,4 +24,14 @@ html, body {
     right: 0;
     left: 0;
   }
+
+
+.stroked-font {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--color-text-main);
+}
   
+
+button:hover, a:hover {
+    cursor: pointer;
+}
