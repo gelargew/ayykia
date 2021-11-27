@@ -27,10 +27,11 @@ const SurroundingImages = () => {
     return (
         <div id='index-2-images'>
             <ScrollComponent id='id2-img1' />
+            <ScrollComponent id='id2-img5' speed={0.08} />
             <ScrollComponent id='id2-img3' speed={0.05} />
             <ScrollComponent id='id2-img2' speed={0.04} />   
             <ScrollComponent id='id2-img4' speed={0.03} />
-            <ScrollComponent id='id2-img5' speed={0.08} />
+            
         </div>
     )
 

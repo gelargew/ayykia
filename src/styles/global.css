@@ -10,7 +10,7 @@
 }
 
 html, body {
-    min-height: 100vh;
+    min-height: 100%;
     margin: 0;
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
@@ -32,6 +32,17 @@ html, body {
 }
   
 
+button {
+    background: none;
+    outline: none;
+    border: none;
+    color: inherit;
+}
+
 button:hover, a:hover {
     cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }

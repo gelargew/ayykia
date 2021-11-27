@@ -6,6 +6,7 @@ import IndexPage2 from '../sections/IndexPage2'
 import MainBg from '../components/MainBg'
 import IndexPage3 from '../sections/IndexPage3'
 import Layout from '../components/Layout'
+import IndexPage4 from '../sections/IndexPage4'
 
 
 interface ScrollStateProps {
@@ -33,6 +34,7 @@ export default function Index() {
           <IndexPage1 />
           <IndexPage2 />
           <IndexPage3 />
+          <IndexPage4 />
         </ScrollContainer>
       </Layout>
     </ScrollState.Provider>

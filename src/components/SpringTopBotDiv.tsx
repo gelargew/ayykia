@@ -9,6 +9,7 @@ export default function SpringTopBotDiv({
     isShowing=true, 
     color='none', 
     isCarousel=true,
+    height=100,
     ...props
 }: animateProps & any) {
     const [{y}, set] = useSpring(() => ({
@@ -22,7 +23,7 @@ export default function SpringTopBotDiv({
             ref.current.style.bottom = isShowing ? 'auto' : '0'
             ref.current.style.top = isShowing ? '0'  : 'auto'
         }
-        set({y: [isShowing ? 100 : 0]})
+        set({y: [isShowing ? height : 0]})
     }, [isShowing])
 
     return (

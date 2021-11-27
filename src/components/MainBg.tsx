@@ -1,6 +1,6 @@
 import { animated, useSpring } from '@react-spring/web'
 import { StaticImage } from 'gatsby-plugin-image'
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 
 export default function MainBg() {
@@ -17,7 +17,7 @@ export default function MainBg() {
     }));
 
     const animateMainBg = () => {
-        set({y: [-window.scrollY/4]})
+        set({y: [-(window.scrollY%window.innerHeight)/4]})
     }
     useEffect(() => {
         window.addEventListener("scroll", animateMainBg);
