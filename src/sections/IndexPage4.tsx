@@ -9,11 +9,6 @@ const ITEMS = [
         color: 'gray'
     },
     {
-        title: 'KITCHEN',
-        imageURL: '/images/kitchen.jpg',
-        color: 'gray'
-    },
-    {
         title: 'LIVING ROOM - MODERN STYLE',
         imageURL: '/images/living-room-modern.jpg',
         color: 'gray'
@@ -31,11 +26,32 @@ export default function IndexPage4() {
 
     return (
         <section id='index-page-4'>
-            <h2 style={{}}>FURNITURE SETS</h2>
             {ITEMS.map(item => 
-                <div key={item.title}>{item.title}</div>)}
+                <FurnitureSet item={item} />)}
         </section>
     )
 }
 
 
+
+interface theProps extends React.HTMLProps<HTMLDivElement> {
+    item: typeof ITEMS[0]
+}
+
+const FurnitureSet = ({item, className, ...props}: theProps) => {
+
+    return (
+        <div 
+        {...props} 
+        className={`furniture-set ${className}`}
+        >
+            <h2>FURNITURE SETS</h2>
+            <div className='furniture-set-image'>
+                <img src={item.imageURL} />
+                <h3>{item.title}</h3>
+            </div>
+           
+            
+        </div>
+    )
+}

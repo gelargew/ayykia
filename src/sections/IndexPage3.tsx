@@ -5,6 +5,8 @@ import CHAIR1 from '../images/chair1.jpg'
 import DESK1 from '../images/desk1.jpg'
 
 type objNames = 'lamp1' | 'chair1' | 'desk1'
+type obj2 = 'a'|'b'|'c'
+type state2 = Record<obj2, boolean>
 type showProps = Record<objNames, boolean>
 
 const showReducer = (state: showProps, action: objNames) => {
@@ -23,6 +25,8 @@ export default function IndexPage3() {
         chair1: false,
         desk1: false
     })
+
+    
 
 
     return (

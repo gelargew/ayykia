@@ -1076,6 +1076,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/playfair-display@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/playfair-display/-/playfair-display-4.5.1.tgz#2cdbe3300013091ea02dc663e9ebf30b47e2d221"
+  integrity sha512-D+/7sLkDj9k7i5IfyF6BjtpIppLTE2N30lxmzWtVJJ0LA2PsyfNCXy+8/b3ZrkzNByaOtOlByVeGfE+9X/4tZA==
+
 "@fontsource/roboto@^4.5.1":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.1.tgz#63f7b783f755d8f6727eb60198627e7e1be3ac20"
