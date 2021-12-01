@@ -20,13 +20,16 @@ interface ScrollStateProps {
 export const ScrollState = React.createContext<ScrollStateProps>(null)
 
 export default function Index() {
-  const [windowScrollY, setWindowScrollY] = useState(window.scrollY)
+  const [windowScrollY, setWindowScrollY] = useState(window.scrollY || 0)
 
-  const setScrollY = () => setWindowScrollY(window.scrollY)
+  const setScrollY = () => setWindowScrollY(window.scrollY || 0)
 
   useEffect(() => {
-    window.addEventListener('scroll', setScrollY)
-    return () => window.removeEventListener('scroll', setScrollY)
+    if (typeof window != 'undefined') {
+      window.addEventListener('scroll', setScrollY)
+      return () => window.removeEventListener('scroll', setScrollY)
+    }
+
   }, [])
 
   return (
