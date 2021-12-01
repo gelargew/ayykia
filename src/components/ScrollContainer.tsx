@@ -24,7 +24,7 @@ const ScrollContainer = ({ children, scrollInertia=70 }: { children?: any, scrol
   }));
 
   const viewportRef = useRef(null);
-  const [currentHeight, setCurrentHeight] = useState(window.innerHeight || 0);
+  const [currentHeight, setCurrentHeight] = useState(window.innerHeight);
 
   const getCurrentHeight = useCallback(entries => {
     for (let entry of entries) {
@@ -34,7 +34,7 @@ const ScrollContainer = ({ children, scrollInertia=70 }: { children?: any, scrol
   }, []);
 
   const handleScroll = () => {
-    set({ y: [-window.scrollY || 0] });
+    set({ y: [-window.scrollY] });
   }
 
   useLayoutEffect(() => {
@@ -49,10 +49,10 @@ const ScrollContainer = ({ children, scrollInertia=70 }: { children?: any, scrol
   }, [getCurrentHeight]);
 
   useEffect(() => {
-    if (typeof window != 'undefined') {
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+
   }, [set]);
 
   return (
