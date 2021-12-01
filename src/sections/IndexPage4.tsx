@@ -12,12 +12,12 @@ const ITEMS = [
         title: 'LIVING ROOM - MODERN STYLE',
         imageURL: '/images/living-room-modern.jpg',
         color: 'gray'
-    },
+    }/* ,
     {
         title: 'LIVING ROOM - VINTAGE STYLE',
         imageURL: '/images/vintage-room.jpg',
         color: 'gray'
-    }
+    } */
 ]
 
 

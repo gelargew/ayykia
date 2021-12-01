@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/products.css'
 
 interface productProps {
     name: string,
@@ -17,7 +18,9 @@ export default function Products({ products }: productsProps) {
         <div className='products'>
             {products.map(product => 
                 <div className='product'>
-                    <img src={product.imageURL} />
+                    <div className='product-image'>
+                        <img src={product.imageURL} />
+                    </div>
                     <h3>{product.name}</h3>
                     <small>{product.price}</small>
                 </div>)}

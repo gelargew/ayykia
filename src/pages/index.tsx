@@ -1,4 +1,5 @@
 import React, {useEffect, useState, useContext} from 'react'
+import {Helmet} from 'react-helmet'
 import IndexPage1 from '../sections/IndexPage1'
 import '../styles/index.css'
 import ScrollContainer from '../components/ScrollContainer'
@@ -7,6 +8,9 @@ import MainBg from '../components/MainBg'
 import IndexPage3 from '../sections/IndexPage3'
 import Layout from '../components/Layout'
 import IndexPage4 from '../sections/IndexPage4'
+import IndexPage5 from '../sections/IndexPage5'
+import IndexPage6 from '../sections/IndexPage6'
+import IndexPage7 from '../sections/IndexPage7'
 
 
 interface ScrollStateProps {
@@ -26,18 +30,26 @@ export default function Index() {
   }, [])
 
   return (
-    <ScrollState.Provider value={{windowScrollY}}>
-      <Layout>
-        <MainBg />
-        <ScrollContainer>
-          
-          <IndexPage1 />
-          <IndexPage2 />
-          <IndexPage3 />
-          <IndexPage4 />
-        </ScrollContainer>
-      </Layout>
-    </ScrollState.Provider>
+    <>
+      <Helmet>
+        <title>AYYKIA | furniture</title>
+      </Helmet>
+      <ScrollState.Provider value={{windowScrollY}}>
+        <Layout>
+          <MainBg />
+          <ScrollContainer>
+            
+            <IndexPage1 />
+            <IndexPage2 />
+            <IndexPage3 />
+            <IndexPage4 />
+            <IndexPage5 />
+            <IndexPage6 />
+            <IndexPage7 />
+          </ScrollContainer>
+        </Layout>
+      </ScrollState.Provider>
+    </>
   )
 }
 

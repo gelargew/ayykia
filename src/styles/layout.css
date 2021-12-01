@@ -27,23 +27,34 @@ header.header-opaque {
 .layout-dropdown {
     z-index: 1;
     position: fixed;
-    overflow: hidden;
-    background: var(--color-bg-main);
-    border-bottom: 1px solid var(--color-border);
+    backdrop-filter: blur(10px);
 }
 
 
 .layout-dropdown nav {
     position: relative;
-    top: 100px;
     display: flex;
-    gap: 10%;
-    padding: 5% 10%;
+    flex-wrap: wrap;
+    gap: 10rem;
+    row-gap: 5rem;
+    padding: 120px 4rem;
     color: var(--color-text-nav);
+    background: var(--color-bg-main);
+    max-height: 90%;
+    overflow-y: auto;
 }
 
 nav section {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
+}
+
+nav section h3 {
+    font-family: 'Playfair Display';
+    color: var(--color-text-main);
+}
+
+nav section a {
+    font-size: small;
 }

@@ -21,18 +21,29 @@ export default function Layout({ children }: { children: any }) {
                     {(isOpaque || showDropdown) && <button onClick={navigateHome}><h1>AYYKIA</h1></button>}
                     <button>CONTACT US</button>
                 </header>
-                <DropDown isShowing={showDropdown} />
+                <DropDown setShowDropdown={setShowDropdown} isShowing={showDropdown} />
             </div>
             {children}
         </LayoutContext.Provider>
     )
 }
 
-const DropDown = ({isShowing=false, ...props}) => {
+const DropDown = ({ setShowDropdown, isShowing=false, ...props}) => {
     const {navigateHome} = useLayoutContext()
+    const closeDropdown = (e:React.MouseEvent) => {
+        if (e.target.className === 'layout-dropdown') {
+            setShowDropdown(false)
+        }
+    }
 
     return (
-        <SpringTopBotDiv isShowing={isShowing} isCarousel={false} height={80} className='layout-dropdown' {...props}>
+        <SpringTopBotDiv 
+        isShowing={isShowing} 
+        isCarousel={false} 
+        height={100} 
+        className='layout-dropdown' 
+        onClick={closeDropdown}
+        {...props}>
             <nav>
                 <section>
                     <h3>AYYKIA</h3>
