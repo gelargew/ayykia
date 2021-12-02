@@ -47,8 +47,6 @@ export default function IndexPage3() {
                 <h2>featured</h2>
                 <button 
                 style={{ 
-                    left: '1rem',
-                    transform: 'translateY(-5rem) rotateZ(-90deg)',
                     color: show.lamp1 ? 'white' : 'transparent'
                 }} 
                 onClick={() => setShow('lamp1')}>
@@ -56,8 +54,6 @@ export default function IndexPage3() {
                 </button>
                 <button 
                 style={{
-                    right: '1rem', 
-                    transform: 'translateY(8rem) rotateZ(90deg)',
                     color: show.chair1 ? 'white' : 'transparent'
                 }} 
                 onClick={() => setShow('chair1')}>

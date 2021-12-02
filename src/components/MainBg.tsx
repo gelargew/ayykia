@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from 'react'
 
 
 export default function MainBg() {
-    const [{y}, set] = useSpring(() => ({
+    const [{y}, spring] = useSpring(() => ({
         y: [0],
         config: {
           mass: 1,
@@ -17,12 +17,12 @@ export default function MainBg() {
     }));
 
     const animateMainBg = () => {
-        set({y: [-(window.scrollY%window.innerHeight)/4]})
+        spring.start({y: [-(window.scrollY%window.innerHeight)/4]})
     }
     useEffect(() => {
         window.addEventListener("scroll", animateMainBg);
         return () => window.removeEventListener("scroll", animateMainBg);
-    }, [set]);
+    }, [spring]);
 
     return (
         <animated.div

@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useContext} from 'react'
+import React, {useEffect, useState, useContext, useLayoutEffect} from 'react'
 import {Helmet} from 'react-helmet'
 import IndexPage1 from '../sections/IndexPage1'
 import '../styles/index.css'
@@ -11,6 +11,7 @@ import IndexPage4 from '../sections/IndexPage4'
 import IndexPage5 from '../sections/IndexPage5'
 import IndexPage6 from '../sections/IndexPage6'
 import IndexPage7 from '../sections/IndexPage7'
+import LoadingPage from '../components/LoadingPage'
 
 
 interface ScrollStateProps {
@@ -28,6 +29,7 @@ export default function Index() {
     window.addEventListener('scroll', setScrollY)
     return () => window.removeEventListener('scroll', setScrollY)
   }, [])
+
 
   return (
     <>

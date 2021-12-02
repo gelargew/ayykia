@@ -12,7 +12,7 @@ export default function SpringTopBotDiv({
     height=100,
     ...props
 }: animateProps & any) {
-    const [{y}, set] = useSpring(() => ({
+    const [{y}, spring] = useSpring(() => ({
         y: [0],
         config: config.molasses
     }))
@@ -23,14 +23,13 @@ export default function SpringTopBotDiv({
             ref.current.style.bottom = isShowing ? 'auto' : '0'
             ref.current.style.top = isShowing ? '0'  : 'auto'
         }
-        set({y: [isShowing ? height : 0]})
+        spring.start({y: [isShowing ? height : 0]})
     }, [isShowing])
 
     return (
         <animated.div
         ref={ref}
         style={{
-            overflow: 'hidden',
             height: y.to(y => `${y}%`),
             width: '100%',
             backgroundColor: color

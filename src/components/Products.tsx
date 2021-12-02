@@ -16,8 +16,8 @@ export default function Products({ products }: productsProps) {
 
     return (
         <div className='products'>
-            {products.map(product => 
-                <div className='product'>
+            {products.map((product, idx) => 
+                <div key={idx} className='product'>
                     <div className='product-image'>
                         <img src={product.imageURL} />
                     </div>

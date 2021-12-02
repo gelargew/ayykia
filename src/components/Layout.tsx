@@ -48,7 +48,7 @@ const DropDown = ({ setShowDropdown, isShowing=false, ...props}) => {
             <nav>
                 <section>
                     <h3>AYYKIA</h3>
-                    <a onClick={navigateHome}>HOME</a>
+                    <a onClick={navigateHome} style={{ opacity: 0.8 }}>HOME</a>
                     <a>ABOUT</a>
                     <a>JOURNAL</a>
                     <a>CONTACT</a>

@@ -1,14 +1,16 @@
 import React from 'react'
+import { useLayoutContext } from '../components/Layout'
 
 
 export default function IndexPage7() {
+    const {navigateHome} = useLayoutContext()
 
     return (
         <section id='footer'>
             <nav className='footer-nav'>
                 <div>
                     <h3>AYYKIA</h3>
-                    <a>Home</a>
+                    <a onClick={navigateHome} style={{opacity: 0.8}}>Home</a>
                     <a>About</a>
                     <a>Contact</a>
                 </div>
@@ -28,7 +30,13 @@ export default function IndexPage7() {
                 </div>
             </nav>
             <h1>Ayykia</h1>
-            <div id='credits'><p>© AYYKIA | 2021</p><p>DESIGN & DEV : <a href='https://gelar.vercel.app/' target='_blank'>Gelar Rustiawan</a></p></div>
+            <div id='credits'><p>© AYYKIA | 2021</p><p>
+                DESIGN & DEV : 
+                <a style={{opacity: 0.9, textDecoration: 'underline'}} href='https://gelar.vercel.app/' target='_blank'>
+                    Gelar Rustiawan
+                </a>
+                </p>
+            </div>
         </section>
     )
 

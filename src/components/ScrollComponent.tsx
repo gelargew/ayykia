@@ -6,7 +6,7 @@ import { useScrollState } from '../pages';
 export function ScrollComponent({speed=0.1, ...props}) {
     const ref = useRef<HTMLDivElement>()
     const { windowScrollY } = useScrollState()
-    const [{ y }, set] = useSpring(() => ({
+    const [{ y }, spring] = useSpring(() => ({
         y: [0],
         config: {
           mass: 1,
@@ -19,7 +19,7 @@ export function ScrollComponent({speed=0.1, ...props}) {
     }));
 
     useEffect(() => {
-        set({y: [-windowScrollY*speed]})
+        spring.start({y: [-windowScrollY*speed]})
     }, [windowScrollY])
 
     return (

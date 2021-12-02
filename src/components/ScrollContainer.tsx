@@ -11,7 +11,7 @@ import ResizeObserver from "resize-observer-polyfill";
 
 
 const ScrollContainer = ({ children, scrollInertia=70 }: { children?: any, scrollInertia?: number}) => {
-  const [{ y }, set] = useSpring(() => ({
+  const [{ y }, spring] = useSpring(() => ({
     y: [0],
     config: {
       mass: 1,
@@ -34,7 +34,7 @@ const ScrollContainer = ({ children, scrollInertia=70 }: { children?: any, scrol
   }, []);
 
   const handleScroll = () => {
-    set({ y: [-window.scrollY] });
+    spring.start({ y: [-window.scrollY] });
   }
 
   useLayoutEffect(() => {
@@ -53,7 +53,7 @@ const ScrollContainer = ({ children, scrollInertia=70 }: { children?: any, scrol
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
 
-  }, [set]);
+  }, [spring]);
 
   return (
     <>

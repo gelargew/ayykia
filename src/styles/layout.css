@@ -25,6 +25,7 @@ header.header-opaque {
 }
 
 .layout-dropdown {
+    overflow: auto;
     z-index: 1;
     position: fixed;
     backdrop-filter: blur(10px);
@@ -41,7 +42,6 @@ header.header-opaque {
     color: var(--color-text-nav);
     background: var(--color-bg-main);
     max-height: 90%;
-    overflow-y: auto;
 }
 
 nav section {
@@ -57,4 +57,10 @@ nav section h3 {
 
 nav section a {
     font-size: small;
+}
+
+@media screen and (max-width: 700px) {
+    .layout-dropdown nav {
+        height: 100%;
+    }
 }

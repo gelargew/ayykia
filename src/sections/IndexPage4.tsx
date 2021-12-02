@@ -27,7 +27,7 @@ export default function IndexPage4() {
     return (
         <section id='index-page-4'>
             {ITEMS.map(item => 
-                <FurnitureSet item={item} />)}
+                <FurnitureSet key={item.imageURL} item={item} />)}
         </section>
     )
 }
