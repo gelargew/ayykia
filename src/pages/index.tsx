@@ -36,7 +36,7 @@ export default function Index() {
       <Helmet>
         <title>AYYKIA | furniture</title>
         <link rel="icon" type="svg" href="/logo.svg" sizes="16x16" />
-        <meta name="image" property="og:image" content="/logo.svg"></meta>
+        <meta name="image" property="og:image" content="/logo.png"></meta>
       </Helmet>
       <ScrollState.Provider value={{windowScrollY}}>
         <Layout>
