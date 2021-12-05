@@ -43,6 +43,18 @@
     transform: scale(0.5);
 }
 
+#main-bg {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#main-bg>img {
+    object-fit: cover;
+    height: 100%;
+}
+
 
 /* INDEX-PAGE-2 */
 

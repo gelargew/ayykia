@@ -41,7 +41,6 @@ export default function Index() {
       </Helmet>
       <ScrollState.Provider value={{windowScrollY}}>
         <Layout>
-          <MainBg />
           <ScrollWrapper>
             
             <IndexPage1 />
