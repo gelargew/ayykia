@@ -3,6 +3,7 @@ import { useLayoutContext } from '../components/Layout'
 import useOnScreen from '../utils/useOnscreen'
 import { useScrollContext } from '../components/ScrollWrapper'
 import { animated } from '@react-spring/web'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function IndexPage1() {
     const ref = useRef<HTMLDivElement>()
@@ -19,7 +20,11 @@ export default function IndexPage1() {
     return (
         <section id='index-page-1' ref={ref}>
             <animated.div id='main-bg' style={{transform: y.to(y => `translateY(${-y/2}px)`)}}>
-                <img  src='/images/living-room.jpg' />
+                <StaticImage
+                id='static-main-bg'
+                alt='living-room'
+                src='../images/living-room.jpg'
+                placeholder="blurred" />
             </animated.div>
             <img className='scroll-arrow' src='/arrow.svg' />
             <h1 id='hero-text'>AYYKIA</h1> 
