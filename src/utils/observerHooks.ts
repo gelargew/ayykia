@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState } from 'react'
+import ResizeObserver from 'resize-observer-polyfill'
 
 
 const useResizeObserver = (ref:React.RefObject<HTMLElement>) => {
