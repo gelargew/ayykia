@@ -16,9 +16,9 @@ const useResizeObserver = (ref:React.RefObject<HTMLElement>) => {
     })
 
     useLayoutEffect(() => {
-        resizeObserver.observe(ref.current)
+        ref.current && resizeObserver.observe(ref.current)
         
-        return () => resizeObserver.unobserve(ref.current)
+        return () => ref.current && resizeObserver.unobserve(ref.current)
     }, [ref])
 
     return size
