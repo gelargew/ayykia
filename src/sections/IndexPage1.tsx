@@ -16,8 +16,8 @@ export default function IndexPage1() {
     return (
         <section id='index-page-1' ref={ref}>
 
-            <h1 id='hero-text'>AYYKIA</h1>
-
+            <h1 id='hero-text'>AYYKIA</h1> 
+            <img className='scroll-arrow' src='/arrow.svg' />
         </section>
     )
 }

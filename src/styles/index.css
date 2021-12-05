@@ -12,6 +12,7 @@
     flex-direction: column;
     place-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #index-bg-main {
@@ -35,10 +36,18 @@
     color: var(--color-text-hero);
 }
 
+.scroll-arrow {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    transform: scale(0.5);
+}
+
 
 /* INDEX-PAGE-2 */
 
 #index-page-2 {
+    position: relative;
     min-height: 150vh;
     display: flex;
     flex-direction: column;

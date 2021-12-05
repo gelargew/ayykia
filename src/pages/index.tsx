@@ -12,6 +12,7 @@ import IndexPage5 from '../sections/IndexPage5'
 import IndexPage6 from '../sections/IndexPage6'
 import IndexPage7 from '../sections/IndexPage7'
 import LoadingPage from '../components/LoadingPage'
+import ScrollWrapper from '../components/ScrollWrapper'
 
 
 interface ScrollStateProps {
@@ -41,7 +42,7 @@ export default function Index() {
       <ScrollState.Provider value={{windowScrollY}}>
         <Layout>
           <MainBg />
-          <ScrollContainer>
+          <ScrollWrapper>
             
             <IndexPage1 />
             <IndexPage2 />
@@ -50,7 +51,7 @@ export default function Index() {
             <IndexPage5 />
             <IndexPage6 />
             <IndexPage7 />
-          </ScrollContainer>
+          </ScrollWrapper>
         </Layout>
       </ScrollState.Provider>
     </>
