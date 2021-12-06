@@ -62,8 +62,8 @@ const DropDown = ({ setShowDropdown, isShowing=false, ...props}) => {
                     <h3>PRODUCTS</h3>
                     <p>LIVING ROOM</p>
                     <p>OFFICE</p>
-                    <a>BEDROOM</a>
-                    <a>KITCHEN</a>
+                    <p>BEDROOM</p>
+                    <p>KITCHEN</p>
                 </section>
             </nav>
         </SpringTopBotDiv>

@@ -38,6 +38,9 @@ export default function Index() {
         <title>AYYKIA | furniture</title>
         <link rel="icon" type="svg" href="/logo.svg" sizes="16x16" />
         <meta name="image" property="og:image" content="/logo.png"></meta>
+        <meta name='description' content='Ayykia, Home furnishings. Selling cheap and high quality furniture' />
+        <html lang='en' />
+        
       </Helmet>
       <ScrollState.Provider value={{windowScrollY}}>
         <Layout>
