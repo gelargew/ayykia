@@ -47,7 +47,7 @@ const FurnitureSet = ({item, className, ...props}: theProps) => {
         >
             <h2>FURNITURE SETS</h2>
             <div className='furniture-set-image'>
-                <img src={item.imageURL} />
+                <img alt={item.title} src={item.imageURL} />
                 <h3>{item.title}</h3>
             </div>
            

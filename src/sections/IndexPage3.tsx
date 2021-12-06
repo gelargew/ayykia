@@ -33,13 +33,13 @@ export default function IndexPage3() {
         <section id='index-page-3'>
             <div id='id3-left'>
                 <SpringTopBotDiv className='id3-carousel' color='#82796C' isShowing={show.lamp1}>
-                    <img src={LAMP1} />
+                    <img alt='lamp' src={LAMP1} />
                 </SpringTopBotDiv>
                 <SpringTopBotDiv className='id3-carousel' color='#dbd6bf' isShowing={show.chair1}>
-                    <img src={CHAIR1} />
+                    <img alt='chair' src={CHAIR1} />
                 </SpringTopBotDiv>
                 <SpringTopBotDiv className='id3-carousel' isShowing={show.desk1}>
-                    <img src={DESK1} />
+                    <img alt='desk' src={DESK1} />
                 </SpringTopBotDiv>
             </div>
 

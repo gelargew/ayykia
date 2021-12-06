@@ -24,9 +24,11 @@ export default function IndexPage1() {
                 id='static-main-bg'
                 alt='living-room'
                 src='../images/living-room.jpg'
-                placeholder="blurred" />
+                placeholder="blurred"
+                style={{height: '100%'}}
+                />
             </animated.div>
-            <img className='scroll-arrow' src='/arrow.svg' />
+            <img className='scroll-arrow' alt='arrow' src='/arrow.svg' />
             <h1 id='hero-text'>AYYKIA</h1> 
 
         </section>

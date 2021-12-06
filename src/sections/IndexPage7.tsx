@@ -32,7 +32,7 @@ export default function IndexPage7() {
             <h1>Ayykia</h1>
             <div id='credits'><p>© AYYKIA | 2021</p><p>
                 DESIGN & DEV : 
-                <a style={{opacity: 0.9, textDecoration: 'underline'}} href='https://gelar.vercel.app/' target='_blank'>
+                <a rel='noopener' style={{opacity: 0.9, textDecoration: 'underline'}} href='https://gelar.vercel.app/' target='_blank'>
                     Gelar Rustiawan
                 </a>
                 </p>
