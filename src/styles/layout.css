@@ -55,8 +55,11 @@ nav section h3 {
     color: var(--color-text-main);
 }
 
-nav section a {
+nav section a, nav section p {
     font-size: small;
+    text-align: left;
+    opacity: 0.4;
+    margin: 0;
 }
 
 @media screen and (max-width: 700px) {

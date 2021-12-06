@@ -11,22 +11,22 @@ export default function IndexPage7() {
                 <div>
                     <h3>AYYKIA</h3>
                     <a onClick={navigateHome} style={{opacity: 0.8}}>Home</a>
-                    <a>About</a>
-                    <a>Contact</a>
+                    <p>About</p>
+                    <p>Contact</p>
                 </div>
                 <div>
                     <h3>SHOP</h3>
-                    <a>All</a>
-                    <a>Featured</a>
-                    <a>Sets</a>
-                    <a></a>
+                    <p>All</p>
+                    <p>Featured</p>
+                    <p>Sets</p>
+                    <p></p>
                 </div>
                 <div>
                     <h3>SETS</h3>
-                    <a>Living Room</a>
-                    <a>Bedroom</a>
-                    <a>Kitchen</a>
-                    <a>Office Room</a>
+                    <p>Living Room</p>
+                    <p>Bedroom</p>
+                    <p>Kitchen</p>
+                    <p>Office Room</p>
                 </div>
             </nav>
             <h1>Ayykia</h1>

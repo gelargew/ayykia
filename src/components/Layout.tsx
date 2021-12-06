@@ -49,19 +49,19 @@ const DropDown = ({ setShowDropdown, isShowing=false, ...props}) => {
                 <section>
                     <h3>AYYKIA</h3>
                     <a onClick={navigateHome} style={{ opacity: 0.8 }}>HOME</a>
-                    <a>ABOUT</a>
-                    <a>JOURNAL</a>
-                    <a>CONTACT</a>
+                    <p>ABOUT</p>
+                    <p>JOURNAL</p>
+                    <p>CONTACT</p>
                 </section>
                 <section>
                     <h3>SHOP</h3>
-                    <a>ALL</a>
-                    <a>FEATURED</a>
+                    <p>ALL</p>
+                    <p>FEATURED</p>
                 </section>
                 <section>
                     <h3>PRODUCTS</h3>
-                    <a>LIVING ROOM</a>
-                    <a>OFFICE</a>
+                    <p>LIVING ROOM</p>
+                    <p>OFFICE</p>
                     <a>BEDROOM</a>
                     <a>KITCHEN</a>
                 </section>
