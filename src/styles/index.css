@@ -272,12 +272,12 @@ section#index-page-5>h2 {
     padding: 1.5rem 0;
     font-size: 2rem;
 }
-section#index-page-5>a>h3 {
+section#index-page-5>h3 {
     font-weight: lighter;
     padding: 1rem 0;
 }
 
-section#index-page-5>h2, section#index-page-5>a>h3 {
+section#index-page-5>h2, section#index-page-5>h3 {
     text-align: center;
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);

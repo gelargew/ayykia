@@ -52,7 +52,7 @@ export default function IndexPage5() {
             
             <h2>PRODUCTS</h2>
             <Products products={PRODUCTS} />
-            <a><h3>SHOP ALL</h3></a>
+            <h3>SHOP ALL</h3>
             
         </section>
     )
