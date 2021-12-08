@@ -35,7 +35,7 @@ export default function ScrollWrapper({children, style, ...props}: React.HTMLPro
     const bind = useGesture({
         onWheel: state => state.active && updateY(-state.movement[1]/2),
         onDrag: state => {
-            updateY(state.delta[1]*state.velocity[1])
+            updateY(state.delta[1]*2*state.velocity[1])
         }
     })
 
