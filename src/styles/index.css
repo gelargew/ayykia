@@ -99,6 +99,7 @@
     position: absolute;
 }
 
+
 #id2-img1 {
     background-image: url(../images/shelf1.jpg);
     width: 300px;
@@ -325,18 +326,22 @@ section#index-page-6 {
     }
 
     #index-2-images {
-        min-width: 600px;
+        min-width: 700px;
     }
 
     #index-page-2 h2 {
-        margin-top: 20rem;
+        margin-top: 5rem;
         -webkit-text-stroke: 1px white;
         font-family: 'Playfair';
         text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.596);
+        background: rgba(0, 0, 0, 0.288);
     }
 
     #index-page-2 p {
+        margin: 0;
+        padding: 1rem;
         color: white;
+        background: rgba(0, 0, 0, 0.253);
         text-shadow: 1px 1px 2px white;
     }
 
