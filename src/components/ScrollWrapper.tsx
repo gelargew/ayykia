@@ -46,7 +46,7 @@ export default function ScrollWrapper({children, style, ...props}: React.HTMLPro
     return (
         <div 
         ref={wrapper}  
-        style={{touchAction: 'none', overflow: 'hidden', height:'100vh', ...style}} 
+        style={{touchAction: 'pinch-zoom', overflow: 'hidden', height:'100vh', ...style}} 
         {...bind()} 
         {...props}
         >
