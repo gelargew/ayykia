@@ -40,7 +40,8 @@ export default function Index() {
         <meta name="image" property="og:image" content="/logo.png"></meta>
         <meta name='description' content='Ayykia, Home furnishings. Selling cheap and high quality furniture' />
         <html lang='en' />
-        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3783205983957489"
+        crossorigin="anonymous"></script>
       </Helmet>
       <ScrollState.Provider value={{windowScrollY}}>
         <Layout>
